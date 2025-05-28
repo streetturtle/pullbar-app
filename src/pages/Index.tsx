@@ -1,4 +1,3 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -40,63 +39,36 @@ const Index = () => {
             </div>
           </div>
 
-          {/* App Mockups */}
+          {/* App Screenshots */}
           <div className="flex flex-col lg:flex-row gap-8 justify-center items-center">
             <div className="relative">
               <div className="bg-gray-900 rounded-lg p-6 border border-gray-700 shadow-2xl shadow-cyan-500/20">
-                <div className="bg-black rounded-md p-4 font-mono text-sm">
-                  <div className="flex items-center justify-between mb-3">
-                    <span className="text-cyan-400">PullBar</span>
-                    <Badge className="bg-green-500/20 text-green-400 border-green-500/30">Free</Badge>
-                  </div>
-                  <div className="space-y-2">
-                    <div className="flex items-center text-gray-300">
-                      <div className="w-2 h-2 bg-green-400 rounded-full mr-3"></div>
-                      <span>Fix login validation</span>
-                    </div>
-                    <div className="flex items-center text-gray-300">
-                      <div className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></div>
-                      <span>Update dependencies</span>
-                    </div>
-                    <div className="flex items-center text-gray-300">
-                      <div className="w-2 h-2 bg-blue-400 rounded-full mr-3"></div>
-                      <span>Add dark mode</span>
-                    </div>
-                  </div>
+                <div className="flex items-center justify-between mb-4">
+                  <span className="text-cyan-400 font-semibold">PullBar</span>
+                  <Badge className="bg-green-500/20 text-green-400 border-green-500/30">Free</Badge>
+                </div>
+                <div className="rounded-md overflow-hidden">
+                  <img 
+                    src="https://user-images.githubusercontent.com/9363150/179432557-f3db115e-fe9d-4f91-ac7c-0d85ce3f9e43.png" 
+                    alt="PullBar macOS menu bar app screenshot"
+                    className="w-full h-auto"
+                  />
                 </div>
               </div>
             </div>
 
             <div className="relative">
               <div className="bg-gray-900 rounded-lg p-6 border border-gray-700 shadow-2xl shadow-purple-500/20">
-                <div className="bg-black rounded-md p-4 font-mono text-sm">
-                  <div className="flex items-center justify-between mb-3">
-                    <span className="text-purple-400">PullBar Pro</span>
-                    <Badge className="bg-purple-500/20 text-purple-400 border-purple-500/30">Pro</Badge>
-                  </div>
-                  <div className="space-y-2">
-                    <div className="flex items-center justify-between text-gray-300">
-                      <div className="flex items-center">
-                        <div className="w-2 h-2 bg-red-400 rounded-full mr-3"></div>
-                        <span>Critical bug fix</span>
-                      </div>
-                      <Filter className="w-3 h-3 text-purple-400" />
-                    </div>
-                    <div className="flex items-center justify-between text-gray-300">
-                      <div className="flex items-center">
-                        <div className="w-2 h-2 bg-green-400 rounded-full mr-3"></div>
-                        <span>Feature: API endpoints</span>
-                      </div>
-                      <Bell className="w-3 h-3 text-green-400" />
-                    </div>
-                    <div className="flex items-center justify-between text-gray-300">
-                      <div className="flex items-center">
-                        <div className="w-2 h-2 bg-blue-400 rounded-full mr-3"></div>
-                        <span>Refactor components</span>
-                      </div>
-                      <Eye className="w-3 h-3 text-blue-400" />
-                    </div>
-                  </div>
+                <div className="flex items-center justify-between mb-4">
+                  <span className="text-purple-400 font-semibold">PullBar Pro</span>
+                  <Badge className="bg-purple-500/20 text-purple-400 border-purple-500/30">Pro</Badge>
+                </div>
+                <div className="rounded-md overflow-hidden">
+                  <img 
+                    src="https://user-images.githubusercontent.com/9363150/179432557-f3db115e-fe9d-4f91-ac7c-0d85ce3f9e43.png" 
+                    alt="PullBar Pro macOS menu bar app screenshot"
+                    className="w-full h-auto"
+                  />
                 </div>
               </div>
             </div>
