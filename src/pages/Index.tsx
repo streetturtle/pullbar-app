@@ -65,7 +65,7 @@ const Index = () => {
                 </div>
                 <div className="rounded-md overflow-hidden">
                   <img 
-                    src="https://user-images.githubusercontent.com/9363150/179432557-f3db115e-fe9d-4f91-ac7c-0d85ce3f9e43.png" 
+                    src="https://menubar-apps.github.io/assets/img/screenshots/pull-bar-pro/pull-bar-pro-2.png" 
                     alt="PullBar Pro macOS menu bar app screenshot"
                     className="w-full h-auto"
                   />
