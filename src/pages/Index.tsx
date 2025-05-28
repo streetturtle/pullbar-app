@@ -1,8 +1,9 @@
+
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Github, Download, Sparkles, Users, Settings, Bell, Filter, Eye, Zap, Shield, Clock, Star, FileText, Tabs, Keyboard, CheckCircle, GitCommit, MessageSquare } from "lucide-react";
+import { Github, Download, Sparkles, Users, Settings, Bell, Filter, Eye, Zap, Shield, Clock, Star, FileText, Layout, Keyboard, CheckCircle, GitCommit, MessageSquare } from "lucide-react";
 import { useState } from "react";
 
 const Index = () => {
@@ -21,7 +22,7 @@ const Index = () => {
       title: "Tabs",
       description: "You can enable up to three tabs with saved searches for assigned, created and review requested PRs. The blue dot on the tab indicates that there are unseen changes in some PRs of this type.",
       screenshot: "https://menubar-apps.github.io/assets/img/screenshots/pull-bar-pro/pull-bar-pro-2.png",
-      icon: Tabs
+      icon: Layout
     },
     {
       id: "keyboard-support",
