@@ -190,9 +190,12 @@ const Index = () => {
                 </div>
               </div>
 
-              <Button className="bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-600 hover:to-pink-700 text-white">
-                <Users className="mr-2" />
-                Try Pro – Built for power users
+              <Button 
+                className="bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-600 hover:to-pink-700 text-white"
+                onClick={() => window.open('https://apps.apple.com/us/app/pullbarpro/id6462591649?mt=12&itsct=apps_box_badge&itscg=30200', '_blank')}
+              >
+                <Download className="mr-2" />
+                Download on the Mac App Store
               </Button>
             </div>
             
