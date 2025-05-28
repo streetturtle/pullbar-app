@@ -1,9 +1,51 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Github, Download, Sparkles, Users, Settings, Bell, Filter, Eye } from "lucide-react";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { Github, Download, Sparkles, Users, Settings, Bell, Filter, Eye, Zap, Shield, Clock, Star } from "lucide-react";
+import { useState } from "react";
 
 const Index = () => {
+  const [selectedFeature, setSelectedFeature] = useState("multiple-accounts");
+
+  const proFeatures = [
+    {
+      id: "multiple-accounts",
+      title: "Multiple GitHub Accounts",
+      description: "Seamlessly switch between multiple GitHub accounts without logging in and out. Perfect for developers working on personal and professional projects.",
+      screenshot: "https://menubar-apps.github.io/assets/img/screenshots/pull-bar-pro/pull-bar-pro-1.png",
+      icon: Users
+    },
+    {
+      id: "smart-filters",
+      title: "Smart Filters & Labels",
+      description: "Advanced filtering system to organize your pull requests by status, repository, author, or custom labels. Find what you need instantly.",
+      screenshot: "https://menubar-apps.github.io/assets/img/screenshots/pull-bar-pro/pull-bar-pro-2.png",
+      icon: Filter
+    },
+    {
+      id: "quick-actions",
+      title: "Quick Actions & Reviews",
+      description: "Perform common actions directly from the menu bar. Approve, request changes, or merge pull requests without opening the browser.",
+      screenshot: "https://menubar-apps.github.io/assets/img/screenshots/pull-bar-pro/pull-bar-pro-3.png",
+      icon: Zap
+    },
+    {
+      id: "notifications",
+      title: "Smart Notifications",
+      description: "Get notified about important pull request events with customizable notification preferences. Never miss a critical review again.",
+      screenshot: "https://menubar-apps.github.io/assets/img/screenshots/pull-bar-pro/pull-bar-pro-4.png",
+      icon: Bell
+    },
+    {
+      id: "saved-views",
+      title: "Saved Views & Workflows",
+      description: "Create and save custom views for different workflows. Organize your pull requests the way that works best for your team.",
+      screenshot: "https://menubar-apps.github.io/assets/img/screenshots/pull-bar-pro/pull-bar-pro-5.png",
+      icon: Eye
+    }
+  ];
+
   return (
     <div className="min-h-screen bg-black text-white overflow-x-hidden">
       {/* Hero Section */}
@@ -225,6 +267,80 @@ const Index = () => {
                   </div>
                 </CardContent>
               </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* PullBar Pro Features Section */}
+      <section className="py-20 px-6 bg-gray-950/50">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-16">
+            <h3 className="text-3xl md:text-4xl font-bold mb-4 text-purple-400">
+              Powerful Features for Professional Workflows
+            </h3>
+            <p className="text-lg text-gray-300 max-w-3xl mx-auto">
+              Discover the advanced capabilities that make PullBar Pro the ultimate tool for serious GitHub users and development teams.
+            </p>
+          </div>
+
+          <div className="flex flex-col lg:flex-row gap-12 items-start">
+            {/* Screenshot Display */}
+            <div className="lg:w-1/2">
+              <div className="sticky top-8">
+                <Card className="bg-gray-900 border-gray-700 shadow-2xl shadow-purple-500/10 overflow-hidden">
+                  <CardContent className="p-0">
+                    <img 
+                      src={proFeatures.find(f => f.id === selectedFeature)?.screenshot}
+                      alt={`${proFeatures.find(f => f.id === selectedFeature)?.title} screenshot`}
+                      className="w-full h-auto transition-opacity duration-300"
+                    />
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+
+            {/* Features Accordion */}
+            <div className="lg:w-1/2">
+              <Accordion 
+                type="single" 
+                collapsible 
+                value={selectedFeature}
+                onValueChange={(value) => value && setSelectedFeature(value)}
+                className="space-y-4"
+              >
+                {proFeatures.map((feature) => {
+                  const IconComponent = feature.icon;
+                  return (
+                    <AccordionItem 
+                      key={feature.id} 
+                      value={feature.id}
+                      className="border border-gray-700 rounded-lg px-6 data-[state=open]:border-purple-500/50 transition-colors"
+                    >
+                      <AccordionTrigger className="hover:no-underline py-6">
+                        <div className="flex items-center space-x-4 text-left">
+                          <div className="flex-shrink-0 w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center">
+                            <IconComponent className="w-6 h-6 text-purple-400" />
+                          </div>
+                          <div>
+                            <h4 className="text-lg font-semibold text-white mb-1">
+                              {feature.title}
+                            </h4>
+                            <p className="text-sm text-gray-400 line-clamp-2">
+                              {feature.description.split('.')[0]}.
+                            </p>
+                          </div>
+                        </div>
+                      </AccordionTrigger>
+                      <AccordionContent className="pb-6">
+                        <div className="ml-16 text-gray-300 leading-relaxed">
+                          {feature.description}
+                        </div>
+                      </AccordionContent>
+                    </AccordionItem>
+                  );
+                })}
+              </Accordion>
             </div>
           </div>
         </div>
