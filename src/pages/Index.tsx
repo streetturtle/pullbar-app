@@ -1,4 +1,3 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -292,8 +291,8 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="flex flex-col gap-8 sm:gap-12 items-start">
-            {/* Screenshot Display - Mobile First */}
+          <div className="flex flex-col lg:flex-row gap-8 sm:gap-12 items-start">
+            {/* Screenshot Display - Mobile First, Desktop Side */}
             <div className="w-full order-1 lg:order-none lg:w-1/2">
               <div className="lg:sticky lg:top-8">
                 <Card className="bg-gray-900 border-gray-700 shadow-2xl shadow-purple-500/10 overflow-hidden">
