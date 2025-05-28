@@ -2,47 +2,54 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Github, Download, Sparkles, Users, Settings, Bell, Filter, Eye, Zap, Shield, Clock, Star } from "lucide-react";
+import { Github, Download, Sparkles, Users, Settings, Bell, Filter, Eye, Zap, Shield, Clock, Star, FileText, Tab, Keyboard, CheckCircle, GitCommit, MessageSquare } from "lucide-react";
 import { useState } from "react";
 
 const Index = () => {
-  const [selectedFeature, setSelectedFeature] = useState("multiple-accounts");
+  const [selectedFeature, setSelectedFeature] = useState("pr-details");
 
   const proFeatures = [
     {
-      id: "multiple-accounts",
-      title: "Multiple GitHub Accounts",
-      description: "Seamlessly switch between multiple GitHub accounts without logging in and out. Perfect for developers working on personal and professional projects.",
+      id: "pr-details",
+      title: "Pull Request Details",
+      description: "For each PR, view the title, repository, PR number, author's name, and optionally the author's avatar. Also available are the number of reviews, number of additions and deletions, and optionally, the status checks.",
       screenshot: "https://menubar-apps.github.io/assets/img/screenshots/pull-bar-pro/pull-bar-pro-1.png",
-      icon: Users
+      icon: FileText
     },
     {
-      id: "smart-filters",
-      title: "Smart Filters & Labels",
-      description: "Advanced filtering system to organize your pull requests by status, repository, author, or custom labels. Find what you need instantly.",
+      id: "tabs",
+      title: "Tabs",
+      description: "You can enable up to three tabs with saved searches for assigned, created and review requested PRs. The blue dot on the tab indicates that there are unseen changes in some PRs of this type.",
       screenshot: "https://menubar-apps.github.io/assets/img/screenshots/pull-bar-pro/pull-bar-pro-2.png",
-      icon: Filter
+      icon: Tab
     },
     {
-      id: "quick-actions",
-      title: "Quick Actions & Reviews",
-      description: "Perform common actions directly from the menu bar. Approve, request changes, or merge pull requests without opening the browser.",
+      id: "keyboard-support",
+      title: "Keyboard Support",
+      description: "You can assign a keyboard shortcut to toggle the app. Additionally, while the app is open, you can switch between tabs using ⌘cmd + 1 through ⌘cmd + 3, depending on the number of enabled tabs.",
       screenshot: "https://menubar-apps.github.io/assets/img/screenshots/pull-bar-pro/pull-bar-pro-3.png",
-      icon: Zap
+      icon: Keyboard
     },
     {
-      id: "notifications",
-      title: "Smart Notifications",
-      description: "Get notified about important pull request events with customizable notification preferences. Never miss a critical review again.",
+      id: "build-checks",
+      title: "Build: Checks",
+      description: "Status checks is a code quality feature of GitHub's pull requests, which is based on external processes, like CI pipeline. There are two types of status checks: check and commit status. PullBar supports both of them.",
       screenshot: "https://menubar-apps.github.io/assets/img/screenshots/pull-bar-pro/pull-bar-pro-4.png",
-      icon: Bell
+      icon: CheckCircle
     },
     {
-      id: "saved-views",
-      title: "Saved Views & Workflows",
-      description: "Create and save custom views for different workflows. Organize your pull requests the way that works best for your team.",
+      id: "build-commit-status",
+      title: "Build: Commit Status",
+      description: "Status checks is a code quality feature of GitHub's pull requests, which is based on external processes, like CI pipeline. There are two types of status checks: check and commit status. PullBar supports both of them.",
       screenshot: "https://menubar-apps.github.io/assets/img/screenshots/pull-bar-pro/pull-bar-pro-5.png",
-      icon: Eye
+      icon: GitCommit
+    },
+    {
+      id: "reviews",
+      title: "Reviews",
+      description: "For each pull request you can find number of approvals, comments or change requests, with the reviewer's name and a direct link to the corresponding review.",
+      screenshot: "https://menubar-apps.github.io/assets/img/screenshots/pull-bar-pro/pull-bar-pro-1.png",
+      icon: MessageSquare
     }
   ];
 
@@ -285,16 +292,18 @@ const Index = () => {
           </div>
 
           <div className="flex flex-col lg:flex-row gap-12 items-start">
-            {/* Screenshot Display */}
+            {/* Screenshot Display - Fixed Container Size */}
             <div className="lg:w-1/2">
               <div className="sticky top-8">
                 <Card className="bg-gray-900 border-gray-700 shadow-2xl shadow-purple-500/10 overflow-hidden">
                   <CardContent className="p-0">
-                    <img 
-                      src={proFeatures.find(f => f.id === selectedFeature)?.screenshot}
-                      alt={`${proFeatures.find(f => f.id === selectedFeature)?.title} screenshot`}
-                      className="w-full h-auto transition-opacity duration-300"
-                    />
+                    <div className="min-h-[400px] flex items-center justify-center bg-gray-800">
+                      <img 
+                        src={proFeatures.find(f => f.id === selectedFeature)?.screenshot}
+                        alt={`${proFeatures.find(f => f.id === selectedFeature)?.title} screenshot`}
+                        className="max-w-full max-h-full object-contain transition-opacity duration-300"
+                      />
+                    </div>
                   </CardContent>
                 </Card>
               </div>
@@ -326,9 +335,6 @@ const Index = () => {
                             <h4 className="text-lg font-semibold text-white mb-1">
                               {feature.title}
                             </h4>
-                            <p className="text-sm text-gray-400 line-clamp-2">
-                              {feature.description.split('.')[0]}.
-                            </p>
                           </div>
                         </div>
                       </AccordionTrigger>
