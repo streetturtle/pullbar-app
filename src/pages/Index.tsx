@@ -1,4 +1,3 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -298,12 +297,14 @@ const Index = () => {
               <div className="sticky top-8">
                 <Card className="bg-gray-900 border-gray-700 shadow-2xl shadow-purple-500/10 overflow-hidden">
                   <CardContent className="p-0">
-                    <div className="min-h-[400px] flex items-center justify-center bg-gray-800">
-                      <img 
-                        src={proFeatures.find(f => f.id === selectedFeature)?.screenshot}
-                        alt={`${proFeatures.find(f => f.id === selectedFeature)?.title} screenshot`}
-                        className="max-w-full max-h-full object-contain transition-opacity duration-300"
-                      />
+                    <div className="w-full h-[400px] flex items-center justify-center bg-gray-800 p-4">
+                      <div className="w-full h-full flex items-center justify-center">
+                        <img 
+                          src={proFeatures.find(f => f.id === selectedFeature)?.screenshot}
+                          alt={`${proFeatures.find(f => f.id === selectedFeature)?.title} screenshot`}
+                          className="max-w-full max-h-full object-contain transition-opacity duration-300"
+                        />
+                      </div>
                     </div>
                   </CardContent>
                 </Card>
