@@ -62,7 +62,27 @@ This project is built with:
 
 ## How can I deploy this project?
 
+### Option 1: Using Lovable
+
 Simply open [Lovable](https://lovable.dev/projects/765a7b3d-c675-4d1a-adca-65804cb5574c) and click on Share -> Publish.
+
+### Option 2: Using GitHub Pages
+
+This project is configured to automatically deploy to GitHub Pages using GitHub Actions. When you push changes to the `main` branch, the following happens:
+
+1. The GitHub Action workflow runs automatically
+2. It builds the project using `npm run build`
+3. The built files are deployed to the `gh-pages` branch
+4. The site is published at `https://[your-username].github.io/pullbar-app/`
+
+To manually trigger a deployment:
+
+```sh
+# Push your changes to the main branch
+git push origin main
+```
+
+You can check the status of your deployment in the Actions tab of your GitHub repository.
 
 ## Can I connect a custom domain to my Lovable project?
 
