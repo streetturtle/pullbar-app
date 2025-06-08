@@ -60,64 +60,98 @@ const Index = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 via-purple-900/20 to-green-900/20"></div>
         <div className="container mx-auto max-w-6xl relative z-10">
           <div className="text-center mb-12 sm:mb-16">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-cyan-400 via-purple-400 to-green-400 bg-clip-text text-transparent animate-fade-in leading-tight">
-              Your GitHub Pull Requests.
-              <br />
-              <span className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl">Always One Click Away.</span>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-cyan-400 via-purple-400 to-green-400 bg-clip-text text-transparent animate-fade-in leading-tight">
+              Your GitHub Pull Requests
+              <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl block mt-2">Always One Click Away</span>
             </h1>
-            <p className="text-lg sm:text-xl lg:text-2xl text-gray-300 mb-8 sm:mb-12 max-w-4xl mx-auto px-4">
-              PullBar and PullBar Pro bring your workflow to the macOS menu bar — the way you want it.
+            <p className="text-lg sm:text-xl text-gray-300 mb-8 sm:mb-10 max-w-3xl mx-auto px-4">
+              A macOS menu bar app that keeps you updated on your GitHub pull requests. Choose between our free, open-source version or the feature-rich Pro edition for power users and teams.
             </p>
-            
-            <div className="flex flex-col gap-4 sm:gap-6 justify-center items-center px-4">
-              <Button 
-                size="lg" 
-                className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white border-0 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 transition-all duration-300 hover:scale-105 w-full sm:w-auto"
-              >
-                <Download className="mr-2 w-4 h-4 sm:w-5 sm:h-5" />
-                <span className="text-center">Download PullBar – Free & Open Source</span>
-              </Button>
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="border-2 border-purple-500 text-purple-400 hover:bg-purple-500 hover:text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold shadow-lg shadow-purple-500/25 hover:shadow-purple-500/40 transition-all duration-300 hover:scale-105 w-full sm:w-auto"
-              >
-                <Sparkles className="mr-2 w-4 h-4 sm:w-5 sm:h-5" />
-                <span className="text-center">Explore PullBar Pro</span>
-              </Button>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto mb-8">
+              <div className="bg-gradient-to-br from-cyan-900/30 to-blue-900/30 p-4 rounded-xl border border-cyan-500/30">
+                <h3 className="text-cyan-400 text-xl font-bold mb-2">PullBar</h3>
+                <Badge className="bg-green-500/20 text-green-400 border-green-500/30 mb-3">Free & Open Source</Badge>
+                <p className="text-gray-300 mb-4 text-sm">The lightweight, minimalist solution for developers who want quick access to their GitHub PRs.</p>
+                <Button 
+                  className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white w-full sm:w-auto"
+                >
+                  <Download className="mr-2 w-4 h-4" />
+                  <span>Download Free</span>
+                </Button>
+              </div>
+              <div className="bg-gradient-to-br from-purple-900/30 to-pink-900/30 p-4 rounded-xl border border-purple-500/30">
+                <h3 className="text-purple-400 text-xl font-bold mb-2">PullBar Pro</h3>
+                <Badge className="bg-purple-500/20 text-purple-400 border-purple-500/30 mb-3">Premium Features</Badge>
+                <p className="text-gray-300 mb-4 text-sm">Enhanced design and powerful features for teams and high-volume reviewers.</p>
+                <Button 
+                  variant="outline" 
+                  className="border-2 border-purple-500 text-purple-400 hover:bg-purple-500 hover:text-white w-full sm:w-auto"
+                >
+                  <Sparkles className="mr-2 w-4 h-4" />
+                  <span>Get Pro Version</span>
+                </Button>
+              </div>
             </div>
           </div>
 
-          {/* App Screenshots */}
-          <div className="flex flex-col gap-6 sm:gap-8 justify-center items-center">
-            <div className="relative w-full max-w-sm sm:max-w-md">
-              <div className="bg-gray-900 rounded-lg p-4 sm:p-6 border border-gray-700 shadow-2xl shadow-cyan-500/20">
-                <div className="flex items-center justify-between mb-3 sm:mb-4">
-                  <span className="text-cyan-400 font-semibold text-sm sm:text-base">PullBar</span>
-                  <Badge className="bg-green-500/20 text-green-400 border-green-500/30 text-xs sm:text-sm">Free</Badge>
+          {/* App Screenshots Side-by-Side */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 max-w-6xl mx-auto">
+            {/* PullBar Screenshot */}
+            <div className="flex flex-col">
+              <div className="bg-gray-900 rounded-xl p-4 border border-gray-700 shadow-xl shadow-cyan-500/20 transition-transform hover:scale-[1.02] duration-300">
+                <div className="flex items-center justify-between mb-3">
+                  <div className="flex items-center gap-2">
+                    <div className="w-3 h-3 rounded-full bg-cyan-400"></div>
+                    <span className="text-cyan-400 font-semibold">PullBar</span>
+                  </div>
+                  <Badge className="bg-green-500/20 text-green-400 border-green-500/30">Free</Badge>
                 </div>
-                <div className="rounded-md overflow-hidden">
+                <div className="rounded-lg overflow-hidden bg-black/50 p-2">
                   <img 
                     src="https://user-images.githubusercontent.com/9363150/179432557-f3db115e-fe9d-4f91-ac7c-0d85ce3f9e43.png" 
                     alt="PullBar macOS menu bar app screenshot"
-                    className="w-full h-auto"
+                    className="w-full h-auto rounded"
                   />
+                </div>
+                <div className="mt-4 space-y-2">
+                  <div className="flex items-center gap-2">
+                    <div className="w-1.5 h-1.5 rounded-full bg-green-400"></div>
+                    <span className="text-gray-300 text-sm">Minimalist interface</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div className="w-1.5 h-1.5 rounded-full bg-green-400"></div>
+                    <span className="text-gray-300 text-sm">Open source codebase</span>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div className="relative w-full max-w-sm sm:max-w-md">
-              <div className="bg-gray-900 rounded-lg p-4 sm:p-6 border border-gray-700 shadow-2xl shadow-purple-500/20">
-                <div className="flex items-center justify-between mb-3 sm:mb-4">
-                  <span className="text-purple-400 font-semibold text-sm sm:text-base">PullBar Pro</span>
-                  <Badge className="bg-purple-500/20 text-purple-400 border-purple-500/30 text-xs sm:text-sm">Pro</Badge>
+            {/* PullBar Pro Screenshot */}
+            <div className="flex flex-col">
+              <div className="bg-gray-900 rounded-xl p-4 border border-gray-700 shadow-xl shadow-purple-500/20 transition-transform hover:scale-[1.02] duration-300">
+                <div className="flex items-center justify-between mb-3">
+                  <div className="flex items-center gap-2">
+                    <div className="w-3 h-3 rounded-full bg-purple-400"></div>
+                    <span className="text-purple-400 font-semibold">PullBar Pro</span>
+                  </div>
+                  <Badge className="bg-purple-500/20 text-purple-400 border-purple-500/30">Premium</Badge>
                 </div>
-                <div className="rounded-md overflow-hidden">
+                <div className="rounded-lg overflow-hidden bg-black/50 p-2">
                   <img 
                     src="https://menubar-apps.github.io/assets/img/screenshots/pull-bar-pro/pull-bar-pro-2.png" 
                     alt="PullBar Pro macOS menu bar app screenshot"
-                    className="w-full h-auto"
+                    className="w-full h-auto rounded"
                   />
+                </div>
+                <div className="mt-4 space-y-2">
+                  <div className="flex items-center gap-2">
+                    <div className="w-1.5 h-1.5 rounded-full bg-purple-400"></div>
+                    <span className="text-gray-300 text-sm">Advanced filtering & tabs</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div className="w-1.5 h-1.5 rounded-full bg-purple-400"></div>
+                    <span className="text-gray-300 text-sm">Enhanced UI with more details</span>
+                  </div>
                 </div>
               </div>
             </div>
