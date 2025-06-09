@@ -4,6 +4,8 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
+  // Set base URL dynamically - use '/pullbar-app/' for production (GitHub Pages), '/' for development
+  base: mode === 'production' ? '/pullbar-app/' : '/',
   server: {
     host: "::",
     port: 8080,
@@ -17,6 +19,5 @@ export default defineConfig(({ mode }) => ({
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
-  },
-  base: '/' // Since this will be the base directory
+  }
 }));
