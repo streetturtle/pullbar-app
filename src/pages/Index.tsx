@@ -67,31 +67,6 @@ const Index = () => {
             <p className="text-lg sm:text-xl text-gray-300 mb-8 sm:mb-10 max-w-3xl mx-auto px-4">
               A macOS menu bar app that keeps you updated on your GitHub pull requests. Choose between our free, open-source version or the feature-rich Pro edition for power users and teams.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto mb-8">
-              <div className="bg-gradient-to-br from-cyan-900/30 to-blue-900/30 p-4 rounded-xl border border-cyan-500/30">
-                <h3 className="text-cyan-400 text-xl font-bold mb-2">PullBar</h3>
-                <Badge className="bg-green-500/20 text-green-400 border-green-500/30 mb-3">Free & Open Source</Badge>
-                <p className="text-gray-300 mb-4 text-sm">The lightweight, minimalist solution for developers who want quick access to their GitHub PRs.</p>
-                <Button 
-                  className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white w-full sm:w-auto"
-                >
-                  <Download className="mr-2 w-4 h-4" />
-                  <span>Download Free</span>
-                </Button>
-              </div>
-              <div className="bg-gradient-to-br from-purple-900/30 to-pink-900/30 p-4 rounded-xl border border-purple-500/30">
-                <h3 className="text-purple-400 text-xl font-bold mb-2">PullBar Pro</h3>
-                <Badge className="bg-purple-500/20 text-purple-400 border-purple-500/30 mb-3">Premium Features</Badge>
-                <p className="text-gray-300 mb-4 text-sm">Enhanced design and powerful features for teams and high-volume reviewers.</p>
-                <Button 
-                  variant="outline" 
-                  className="border-2 border-purple-500 text-purple-400 hover:bg-purple-500 hover:text-white w-full sm:w-auto"
-                >
-                  <Sparkles className="mr-2 w-4 h-4" />
-                  <span>Get Pro Version</span>
-                </Button>
-              </div>
-            </div>
           </div>
 
           {/* App Screenshots Side-by-Side */}
@@ -106,22 +81,22 @@ const Index = () => {
                   </div>
                   <Badge className="bg-green-500/20 text-green-400 border-green-500/30">Free</Badge>
                 </div>
-                <div className="rounded-lg overflow-hidden bg-black/50 p-2">
+                <div className="rounded-lg overflow-hidden bg-black/50 p-2 mb-4">
                   <img 
                     src="https://user-images.githubusercontent.com/9363150/179432557-f3db115e-fe9d-4f91-ac7c-0d85ce3f9e43.png" 
                     alt="PullBar macOS menu bar app screenshot"
                     className="w-full h-auto rounded"
                   />
                 </div>
-                <div className="mt-4 space-y-2">
-                  <div className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-green-400"></div>
-                    <span className="text-gray-300 text-sm">Minimalist interface</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-green-400"></div>
-                    <span className="text-gray-300 text-sm">Open source codebase</span>
-                  </div>
+                <div className="space-y-3">
+                  <Badge className="bg-green-500/20 text-green-400 border-green-500/30 mb-3">Free & Open Source</Badge>
+                  <p className="text-gray-300 mb-4 text-sm">The lightweight, minimalist solution for developers who want quick access to their GitHub PRs.</p>
+                  <Button 
+                    className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white w-full"
+                  >
+                    <Download className="mr-2 w-4 h-4" />
+                    <span>Download Free</span>
+                  </Button>
                 </div>
               </div>
             </div>
@@ -136,22 +111,23 @@ const Index = () => {
                   </div>
                   <Badge className="bg-purple-500/20 text-purple-400 border-purple-500/30">Premium</Badge>
                 </div>
-                <div className="rounded-lg overflow-hidden bg-black/50 p-2">
+                <div className="rounded-lg overflow-hidden bg-black/50 p-2 mb-4">
                   <img 
                     src="https://menubar-apps.github.io/assets/img/screenshots/pull-bar-pro/pull-bar-pro-2.png" 
                     alt="PullBar Pro macOS menu bar app screenshot"
                     className="w-full h-auto rounded"
                   />
                 </div>
-                <div className="mt-4 space-y-2">
-                  <div className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-purple-400"></div>
-                    <span className="text-gray-300 text-sm">Advanced filtering & tabs</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-purple-400"></div>
-                    <span className="text-gray-300 text-sm">Enhanced UI with more details</span>
-                  </div>
+                <div className="space-y-3">
+                  <Badge className="bg-purple-500/20 text-purple-400 border-purple-500/30 mb-3">Premium Features</Badge>
+                  <p className="text-gray-300 mb-4 text-sm">Enhanced design and powerful features for teams and high-volume reviewers.</p>
+                  <Button 
+                    variant="outline" 
+                    className="border-2 border-purple-500 text-purple-400 hover:bg-purple-500 hover:text-white w-full"
+                  >
+                    <Sparkles className="mr-2 w-4 h-4" />
+                    <span>Get Pro Version</span>
+                  </Button>
                 </div>
               </div>
             </div>
