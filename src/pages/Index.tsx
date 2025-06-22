@@ -165,67 +165,67 @@ const Index = () => {
       {/* PullBar Section */}
       <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6">
         <div className="container mx-auto max-w-6xl">
-          <div className="flex flex-col gap-8 sm:gap-12 items-center">
-            <div className="w-full text-center lg:text-left">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 text-cyan-400">
-                PullBar
-                <span className="block text-xl sm:text-2xl lg:text-3xl text-gray-300 mt-2">The Lightweight PR Companion</span>
-              </h2>
-              <p className="text-base sm:text-lg text-gray-300 mb-6 sm:mb-8 leading-relaxed max-w-3xl mx-auto lg:mx-0">
-                A minimalist macOS menu bar app for developers who want quick, native access to GitHub pull requests. 
-                Open source and free to use. Designed for simplicity and performance.
-              </p>
-              
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-6 sm:mb-8 max-w-2xl mx-auto lg:mx-0">
-                <div className="flex items-center text-gray-300 text-sm sm:text-base">
-                  <div className="w-2 h-2 bg-cyan-400 rounded-full mr-3 flex-shrink-0"></div>
-                  <span>Instantly view open pull requests</span>
-                </div>
-                <div className="flex items-center text-gray-300 text-sm sm:text-base">
-                  <div className="w-2 h-2 bg-cyan-400 rounded-full mr-3 flex-shrink-0"></div>
-                  <span>One-click access to GitHub</span>
-                </div>
-                <div className="flex items-center text-gray-300 text-sm sm:text-base">
-                  <div className="w-2 h-2 bg-cyan-400 rounded-full mr-3 flex-shrink-0"></div>
-                  <span>Lightweight and resource-friendly</span>
-                </div>
-                <div className="flex items-center text-gray-300 text-sm sm:text-base">
-                  <div className="w-2 h-2 bg-cyan-400 rounded-full mr-3 flex-shrink-0"></div>
-                  <span>Native macOS look and feel</span>
-                </div>
-                <div className="flex items-center text-gray-300 text-sm sm:text-base sm:col-span-2">
-                  <div className="w-2 h-2 bg-cyan-400 rounded-full mr-3 flex-shrink-0"></div>
-                  <span>GitHub token-based authentication</span>
-                </div>
-              </div>
+          <div className="text-center lg:text-left mb-8 sm:mb-12">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 text-cyan-400">
+              PullBar
+              <span className="block text-xl sm:text-2xl lg:text-3xl text-gray-300 mt-2">The Lightweight PR Companion</span>
+            </h2>
+            <p className="text-base sm:text-lg text-gray-300 mb-6 sm:mb-8 leading-relaxed max-w-3xl mx-auto lg:mx-0">
+              A minimalist macOS menu bar app for developers who want quick, native access to GitHub pull requests. 
+              Open source and free to use. Designed for simplicity and performance.
+            </p>
+          </div>
 
-              <div className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
-                <Button className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white w-full sm:w-auto">
-                  <Github className="mr-2 w-4 h-4" />
-                  View on GitHub
-                </Button>
-                <Badge className="bg-green-500/20 text-green-400 border-green-500/30 px-4 py-2 text-sm">
-                  Free & Open Source
-                </Badge>
-              </div>
-            </div>
-            
-            <div className="w-full max-w-md lg:max-w-lg">
-              <Card className="bg-gray-900 border-gray-700 shadow-2xl shadow-cyan-500/10">
-                <CardContent className="p-6 sm:p-8">
-                  <div className="bg-black rounded-lg p-4 sm:p-6 font-mono text-sm sm:text-base">
-                    <div className="text-cyan-400 mb-4">~/pullbar</div>
-                    <div className="space-y-3">
-                      <div className="text-green-400">✓ Minimal resource usage</div>
-                      <div className="text-green-400">✓ Fast GitHub API integration</div>
-                      <div className="text-green-400">✓ Clean, native interface</div>
-                      <div className="text-green-400">✓ Open source transparency</div>
+          <Card className="bg-gray-900 border-gray-700 shadow-xl shadow-cyan-500/20">
+            <CardContent className="p-6 sm:p-8">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <div>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-6 sm:mb-8">
+                    <div className="flex items-center text-gray-300 text-sm sm:text-base">
+                      <div className="w-2 h-2 bg-cyan-400 rounded-full mr-3 flex-shrink-0"></div>
+                      <span>Instantly view open pull requests</span>
+                    </div>
+                    <div className="flex items-center text-gray-300 text-sm sm:text-base">
+                      <div className="w-2 h-2 bg-cyan-400 rounded-full mr-3 flex-shrink-0"></div>
+                      <span>One-click access to GitHub</span>
+                    </div>
+                    <div className="flex items-center text-gray-300 text-sm sm:text-base">
+                      <div className="w-2 h-2 bg-cyan-400 rounded-full mr-3 flex-shrink-0"></div>
+                      <span>Lightweight and resource-friendly</span>
+                    </div>
+                    <div className="flex items-center text-gray-300 text-sm sm:text-base">
+                      <div className="w-2 h-2 bg-cyan-400 rounded-full mr-3 flex-shrink-0"></div>
+                      <span>Native macOS look and feel</span>
+                    </div>
+                    <div className="flex items-center text-gray-300 text-sm sm:text-base sm:col-span-2">
+                      <div className="w-2 h-2 bg-cyan-400 rounded-full mr-3 flex-shrink-0"></div>
+                      <span>GitHub token-based authentication</span>
                     </div>
                   </div>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
+
+                  <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+                    <Button className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white w-full sm:w-auto">
+                      <Github className="mr-2 w-4 h-4" />
+                      View on GitHub
+                    </Button>
+                    <Badge className="bg-green-500/20 text-green-400 border-green-500/30 px-4 py-2 text-sm">
+                      Free & Open Source
+                    </Badge>
+                  </div>
+                </div>
+                
+                <div className="flex justify-center">
+                  <div className="bg-black rounded-lg p-4 w-full max-w-md">
+                    <img 
+                      src="https://user-images.githubusercontent.com/9363150/179432557-f3db115e-fe9d-4f91-ac7c-0d85ce3f9e43.png" 
+                      alt="PullBar macOS menu bar app screenshot"
+                      className="w-full h-auto rounded"
+                    />
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
         </div>
       </section>
 
@@ -235,81 +235,69 @@ const Index = () => {
       {/* PullBar Pro Section */}
       <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6">
         <div className="container mx-auto max-w-6xl">
-          <div className="flex flex-col gap-8 sm:gap-12 items-center">
-            <div className="w-full text-center lg:text-left">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 text-purple-400">
-                PullBar Pro
-                <span className="block text-xl sm:text-2xl lg:text-3xl text-gray-300 mt-2">Power & Customization for Serious Reviewers</span>
-              </h2>
-              <p className="text-base sm:text-lg text-gray-300 mb-6 sm:mb-8 leading-relaxed max-w-3xl mx-auto lg:mx-0">
-                A premium evolution of PullBar with a refined interface and advanced features tailored for high-volume reviewers and team leads. 
-                Enhanced design, more control, and deeper GitHub integration.
-              </p>
-              
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-6 sm:mb-8 max-w-2xl mx-auto lg:mx-0">
-                <div className="flex items-center text-gray-300 text-sm sm:text-base">
-                  <div className="w-2 h-2 bg-purple-400 rounded-full mr-3 flex-shrink-0"></div>
-                  <span>Sleek, redesigned UI</span>
-                </div>
-                <div className="flex items-center text-gray-300 text-sm sm:text-base">
-                  <div className="w-2 h-2 bg-purple-400 rounded-full mr-3 flex-shrink-0"></div>
-                  <span>Multiple GitHub accounts</span>
-                </div>
-                <div className="flex items-center text-gray-300 text-sm sm:text-base">
-                  <div className="w-2 h-2 bg-purple-400 rounded-full mr-3 flex-shrink-0"></div>
-                  <span>Smart filters and labels</span>
-                </div>
-                <div className="flex items-center text-gray-300 text-sm sm:text-base">
-                  <div className="w-2 h-2 bg-purple-400 rounded-full mr-3 flex-shrink-0"></div>
-                  <span>Saved views for workflows</span>
-                </div>
-                <div className="flex items-center text-gray-300 text-sm sm:text-base">
-                  <div className="w-2 h-2 bg-purple-400 rounded-full mr-3 flex-shrink-0"></div>
-                  <span>Review reminders & quick actions</span>
-                </div>
-                <div className="flex items-center text-gray-300 text-sm sm:text-base">
-                  <div className="w-2 h-2 bg-purple-400 rounded-full mr-3 flex-shrink-0"></div>
-                  <span>Priority updates & support</span>
-                </div>
-              </div>
+          <div className="text-center lg:text-left mb-8 sm:mb-12">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 text-purple-400">
+              PullBar Pro
+              <span className="block text-xl sm:text-2xl lg:text-3xl text-gray-300 mt-2">Power & Customization for Serious Reviewers</span>
+            </h2>
+            <p className="text-base sm:text-lg text-gray-300 mb-6 sm:mb-8 leading-relaxed max-w-3xl mx-auto lg:mx-0">
+              A premium evolution of PullBar with a refined interface and advanced features tailored for high-volume reviewers and team leads. 
+              Enhanced design, more control, and deeper GitHub integration.
+            </p>
+          </div>
 
-              <Button 
-                className="bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-600 hover:to-pink-700 text-white w-full sm:w-auto"
-                onClick={() => window.open('https://apps.apple.com/us/app/pullbarpro/id6462591649?mt=12&itsct=apps_box_badge&itscg=30200', '_blank')}
-              >
-                <Download className="mr-2 w-4 h-4" />
-                Download on the Mac App Store
-              </Button>
-            </div>
-            
-            <div className="w-full max-w-md lg:max-w-lg">
-              <Card className="bg-gray-900 border-gray-700 shadow-2xl shadow-purple-500/10">
-                <CardContent className="p-6 sm:p-8">
-                  <div className="bg-black rounded-lg p-4 sm:p-6 font-mono text-sm sm:text-base">
-                    <div className="text-purple-400 mb-4">~/pullbar-pro</div>
-                    <div className="space-y-3">
-                      <div className="flex items-center justify-between">
-                        <span className="text-green-400">⚡ Advanced filtering</span>
-                        <Settings className="w-4 h-4 text-purple-400" />
-                      </div>
-                      <div className="flex items-center justify-between">
-                        <span className="text-green-400">🔔 Smart notifications</span>
-                        <Bell className="w-4 h-4 text-green-400" />
-                      </div>
-                      <div className="flex items-center justify-between">
-                        <span className="text-green-400">👥 Multi-account support</span>
-                        <Users className="w-4 h-4 text-blue-400" />
-                      </div>
-                      <div className="flex items-center justify-between">
-                        <span className="text-green-400">⭐ Premium support</span>
-                        <Sparkles className="w-4 h-4 text-purple-400" />
-                      </div>
+          <Card className="bg-gray-900 border-gray-700 shadow-xl shadow-purple-500/20">
+            <CardContent className="p-6 sm:p-8">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <div>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-6 sm:mb-8">
+                    <div className="flex items-center text-gray-300 text-sm sm:text-base">
+                      <div className="w-2 h-2 bg-purple-400 rounded-full mr-3 flex-shrink-0"></div>
+                      <span>Sleek, redesigned UI</span>
+                    </div>
+                    <div className="flex items-center text-gray-300 text-sm sm:text-base">
+                      <div className="w-2 h-2 bg-purple-400 rounded-full mr-3 flex-shrink-0"></div>
+                      <span>Multiple GitHub accounts</span>
+                    </div>
+                    <div className="flex items-center text-gray-300 text-sm sm:text-base">
+                      <div className="w-2 h-2 bg-purple-400 rounded-full mr-3 flex-shrink-0"></div>
+                      <span>Smart filters and labels</span>
+                    </div>
+                    <div className="flex items-center text-gray-300 text-sm sm:text-base">
+                      <div className="w-2 h-2 bg-purple-400 rounded-full mr-3 flex-shrink-0"></div>
+                      <span>Saved views for workflows</span>
+                    </div>
+                    <div className="flex items-center text-gray-300 text-sm sm:text-base">
+                      <div className="w-2 h-2 bg-purple-400 rounded-full mr-3 flex-shrink-0"></div>
+                      <span>Review reminders & quick actions</span>
+                    </div>
+                    <div className="flex items-center text-gray-300 text-sm sm:text-base">
+                      <div className="w-2 h-2 bg-purple-400 rounded-full mr-3 flex-shrink-0"></div>
+                      <span>Priority updates & support</span>
                     </div>
                   </div>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
+
+                  <Button 
+                    className="bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-600 hover:to-pink-700 text-white w-full sm:w-auto"
+                    onClick={() => window.open('https://apps.apple.com/us/app/pullbarpro/id6462591649?mt=12&itsct=apps_box_badge&itscg=30200', '_blank')}
+                  >
+                    <Download className="mr-2 w-4 h-4" />
+                    Download on the Mac App Store
+                  </Button>
+                </div>
+                
+                <div className="flex justify-center">
+                  <div className="bg-black rounded-lg p-4 w-full max-w-md">
+                    <img 
+                      src="https://menubar-apps.github.io/assets/img/screenshots/pull-bar-pro/pull-bar-pro-2.png" 
+                      alt="PullBar Pro macOS menu bar app screenshot"
+                      className="w-full h-auto rounded"
+                    />
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
         </div>
       </section>
 
