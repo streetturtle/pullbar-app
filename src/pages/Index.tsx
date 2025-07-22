@@ -318,34 +318,34 @@ const Index = () => {
                 onValueChange={(value) => value && setSelectedFeature(value)}
                 className="space-y-3 sm:space-y-4"
               >
-                {proFeatures.map((feature) => {
-                  const IconComponent = feature.icon;
-                  return (
-                    <AccordionItem 
-                      key={feature.id} 
-                      value={feature.id}
-                      className="border border-gray-700 rounded-lg px-4 sm:px-6 data-[state=open]:border-purple-500/50 transition-colors"
-                    >
-                      <AccordionTrigger className="hover:no-underline py-4 sm:py-6 [&>svg]:w-5 [&>svg]:h-5">
-                        <div className="flex items-center space-x-3 sm:space-x-4 text-left w-full">
-                          <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-purple-500/20 rounded-lg flex items-center justify-center">
-                            <IconComponent className="w-5 h-5 sm:w-6 sm:h-6 text-purple-400" />
-                          </div>
-                          <div className="min-w-0 flex-1">
-                            <h4 className="text-base sm:text-lg font-semibold text-white mb-1 break-words">
-                              {feature.title}
-                            </h4>
-                          </div>
-                        </div>
-                      </AccordionTrigger>
-                      <AccordionContent className="pb-4 sm:pb-6">
-                        <div className="ml-12 sm:ml-16 text-sm sm:text-base text-gray-300 leading-relaxed">
-                          {feature.description}
-                        </div>
-                      </AccordionContent>
-                    </AccordionItem>
-                  );
-                })}
+                 {proFeatures.map((feature) => {
+                   const IconComponent = feature.icon;
+                   return (
+                     <AccordionItem 
+                       key={feature.id} 
+                       value={feature.id}
+                       className="border border-gray-700 rounded-lg px-3 sm:px-4 data-[state=open]:border-purple-500/50 transition-colors"
+                     >
+                       <AccordionTrigger className="hover:no-underline py-2 sm:py-3 [&>svg]:w-4 [&>svg]:h-4">
+                         <div className="flex items-center space-x-2 sm:space-x-3 text-left w-full">
+                           <div className="flex-shrink-0 w-6 h-6 sm:w-8 sm:h-8 bg-purple-500/20 rounded-lg flex items-center justify-center">
+                             <IconComponent className="w-3 h-3 sm:w-4 sm:h-4 text-purple-400" />
+                           </div>
+                           <div className="min-w-0 flex-1">
+                             <h4 className="text-sm sm:text-base font-semibold text-white break-words">
+                               {feature.title}
+                             </h4>
+                           </div>
+                         </div>
+                       </AccordionTrigger>
+                       <AccordionContent className="pb-2 sm:pb-3">
+                         <div className="ml-8 sm:ml-11 text-xs sm:text-sm text-gray-300 leading-relaxed">
+                           {feature.description}
+                         </div>
+                       </AccordionContent>
+                     </AccordionItem>
+                   );
+                 })}
               </Accordion>
             </div>
           </div>
