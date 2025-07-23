@@ -67,8 +67,7 @@ const PullBarPro = () => {
       <nav className="relative z-10 p-4 sm:p-6 backdrop-blur-sm">
         <div className="container mx-auto max-w-6xl">
           <Link to="/" className="group inline-flex items-center text-purple-400 hover:text-purple-300 transition-all duration-300 hover:scale-105">
-            <ArrowLeft className="w-4 h-4 mr-2 transition-transform group-hover:-translate-x-1" />
-            <span className="font-medium">Back to Home</span>
+            <ArrowLeft className="w-4 h-4 transition-transform group-hover:-translate-x-1" />
           </Link>
         </div>
       </nav>
@@ -90,7 +89,11 @@ const PullBarPro = () => {
             <p className="text-xl sm:text-2xl lg:text-3xl text-gray-300 mb-10 leading-relaxed max-w-4xl mx-auto lg:mx-0 font-light">
               A <span className="text-purple-400 font-semibold">premium evolution</span> with a refined interface and advanced features tailored for <span className="text-pink-400 font-semibold">high-volume reviewers</span> and team leads.
             </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-10">
+            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-8">
+              <Badge className="bg-gradient-to-r from-green-500/20 to-emerald-500/20 text-green-300 border border-green-500/30 px-6 py-3 text-lg font-medium backdrop-blur-sm">
+                <Download className="w-4 h-4 mr-2" />
+                Free App
+              </Badge>
               <Badge className="bg-gradient-to-r from-purple-500/20 to-pink-500/20 text-purple-300 border border-purple-500/30 px-6 py-3 text-lg font-medium backdrop-blur-sm">
                 <Sparkles className="w-4 h-4 mr-2" />
                 Premium Features
@@ -99,6 +102,13 @@ const PullBarPro = () => {
                 <Download className="w-4 h-4 mr-2" />
                 Mac App Store
               </Badge>
+            </div>
+            <div className="bg-gray-800/40 border border-gray-700/50 rounded-xl p-6 mb-10 backdrop-blur-sm">
+              <p className="text-lg text-gray-300 leading-relaxed">
+                <span className="text-green-400 font-semibold">Free to download</span> with one tab included. 
+                Unlock <span className="text-purple-400 font-semibold">up to 5 customizable tabs</span> with a one-time 
+                <span className="text-pink-400 font-semibold"> in-app purchase</span> for the full pro experience.
+              </p>
             </div>
           </div>
 
