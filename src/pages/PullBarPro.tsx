@@ -178,7 +178,7 @@ const PullBarPro = () => {
                     <div className="absolute -inset-2 bg-gradient-to-r from-purple-500 to-pink-600 rounded-2xl blur opacity-20 group-hover:opacity-30 transition duration-1000"></div>
                     <Card className="relative bg-gray-900/80 border-gray-700/50 shadow-2xl shadow-purple-500/20 overflow-hidden backdrop-blur-sm">
                       <CardContent className="p-0">
-                        <div className="w-full h-[350px] lg:h-[450px] flex items-center justify-center bg-gradient-to-br from-gray-800/50 to-gray-900/50 p-6">
+                        <div className="w-full h-[500px] lg:h-[600px] flex items-center justify-center bg-gradient-to-br from-gray-800/50 to-gray-900/50 p-6">
                           <div className="w-full h-full flex items-center justify-center">
                             <img 
                               src={proFeatures.find(f => f.id === selectedFeature)?.screenshot}
