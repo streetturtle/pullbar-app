@@ -63,14 +63,8 @@ const PullBarPro = () => {
         <div className="absolute top-3/4 left-1/2 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl animate-pulse" style={{animationDelay: '4s'}}></div>
       </div>
 
-      {/* Navigation */}
-      <nav className="relative z-10 p-4 sm:p-6 backdrop-blur-sm">
-        <div className="container mx-auto max-w-6xl">
-          <Link to="/" className="group inline-flex items-center text-purple-400 hover:text-purple-300 transition-all duration-300 hover:scale-105">
-            <ArrowLeft className="w-4 h-4 transition-transform group-hover:-translate-x-1" />
-          </Link>
-        </div>
-      </nav>
+      {/* Header */}
+      <div className="relative z-10 h-4"></div>
 
       {/* Hero Section */}
       <section className="relative py-12 sm:py-16 lg:py-20 px-4 sm:px-6">
