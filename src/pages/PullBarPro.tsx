@@ -28,7 +28,7 @@ const PullBarPro = () => {
       id: "keyboard-support",
       title: "Keyboard Support",
       description: "You can assign a keyboard shortcut to toggle the app. Additionally, while the app is open, you can switch between tabs using ⌘cmd + 1 through ⌘cmd + 3, depending on the number of enabled tabs.",
-      screenshot: "https://menubar-apps.github.io/assets/img/screenshots/pull-bar-pro/pull-bar-pro-3.png",
+      screenshot: "/lovable-uploads/820b73a4-adb6-43d6-95e5-96692a74c8fd.png",
       icon: Keyboard
     },
     {
