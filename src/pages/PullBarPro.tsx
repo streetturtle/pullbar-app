@@ -20,8 +20,8 @@ const PullBarPro = () => {
     {
       id: "tabs",
       title: "Tabs",
-      description: "You can enable up to three tabs with saved searches for assigned, created and review requested PRs. The blue dot on the tab indicates that there are unseen changes in some PRs of this type.",
-      screenshot: "https://menubar-apps.github.io/assets/img/screenshots/pull-bar-pro/pull-bar-pro-2.png",
+      description: "Customize up to multiple tabs with personalized names and custom GitHub search queries. Enable or disable tabs as needed, set specific search criteria like 'reviewed-by:@me' or 'author:@me', and organize your workflow with predefined query tips. Each tab can filter PRs by specific repositories, authors, review status, or any GitHub search parameter.",
+      screenshot: "/lovable-uploads/ff05b8ef-0d7d-4a66-a6c9-44f0b1748f21.png",
       icon: Layout
     },
     {
