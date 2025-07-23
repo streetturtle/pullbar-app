@@ -14,7 +14,7 @@ const PullBarPro = () => {
       id: "pr-details",
       title: "Pull Request Details",
       description: "View comprehensive PR information at a glance: author avatars, descriptive titles, repository and PR numbers, branch details, timestamps, and code change statistics (+/- lines). Each PR shows the author's profile picture, making it easy to identify contributors, along with precise branch information and time since last update.",
-      screenshot: "https://menubar-apps.github.io/assets/img/screenshots/pull-bar-pro/pull-bar-pro-1.png",
+      screenshot: "/lovable-uploads/eef44819-4ec1-4c5a-b3ce-78c782761e20.png",
       icon: FileText
     },
     {
