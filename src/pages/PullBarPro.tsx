@@ -35,7 +35,7 @@ const PullBarPro = () => {
       id: "build-checks",
       title: "Build: Checks",
       description: "Status checks is a code quality feature of GitHub's pull requests, which is based on external processes, like CI pipeline. There are two types of status checks: check and commit status. PullBar supports both of them.",
-      screenshot: "https://menubar-apps.github.io/assets/img/screenshots/pull-bar-pro/pull-bar-pro-4.png",
+      screenshot: "/lovable-uploads/2365da03-df5c-43e7-87fc-1e0701e26b8d.png",
       icon: CheckCircle
     },
     {
