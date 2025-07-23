@@ -49,7 +49,7 @@ const PullBarPro = () => {
       id: "reviews",
       title: "Reviews",
       description: "For each pull request you can find number of approvals, comments or change requests, with the reviewer's name and a direct link to the corresponding review.",
-      screenshot: "https://menubar-apps.github.io/assets/img/screenshots/pull-bar-pro/pull-bar-pro-1.png",
+      screenshot: "/lovable-uploads/ec6ac55a-420a-4139-9426-280185864a57.png",
       icon: MessageSquare
     }
   ];
