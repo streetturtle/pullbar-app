@@ -261,6 +261,64 @@ const PullBarPro = () => {
           </div>
         </div>
       </section>
+
+      {/* Footer */}
+      <footer className="border-t border-gray-800 bg-gray-900/50">
+        <div className="container mx-auto px-4 py-8 sm:py-12">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            {/* Brand */}
+            <div className="md:col-span-1">
+              <div className="flex items-center space-x-3 mb-4">
+                <img 
+                  src="/lovable-uploads/eca8ef3b-a8f7-47a9-9eab-13a334a70c09.png"
+                  alt="PullBar Pro"
+                  className="w-8 h-8 rounded-lg"
+                />
+                <span className="text-xl font-bold text-white">PullBar Pro</span>
+              </div>
+              <p className="text-gray-400 text-sm">
+                Beautiful GitHub pull request management for macOS.
+              </p>
+            </div>
+
+            {/* Product */}
+            <div>
+              <h3 className="text-white font-semibold mb-3">Product</h3>
+              <ul className="space-y-2 text-sm">
+                <li><a href="#features" className="text-gray-400 hover:text-white transition-colors">Features</a></li>
+                <li><a href="#pricing" className="text-gray-400 hover:text-white transition-colors">Pricing</a></li>
+                <li><a href="#download" className="text-gray-400 hover:text-white transition-colors">Download</a></li>
+              </ul>
+            </div>
+
+            {/* Support */}
+            <div>
+              <h3 className="text-white font-semibold mb-3">Support</h3>
+              <ul className="space-y-2 text-sm">
+                <li><a href="#how-it-works" className="text-gray-400 hover:text-white transition-colors">How It Works</a></li>
+                <li><a href="#system-requirements" className="text-gray-400 hover:text-white transition-colors">Requirements</a></li>
+              </ul>
+            </div>
+
+            {/* Legal */}
+            <div>
+              <h3 className="text-white font-semibold mb-3">Legal</h3>
+              <ul className="space-y-2 text-sm">
+                <li><a href="/privacy" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="border-t border-gray-800 mt-8 pt-6 flex flex-col sm:flex-row justify-between items-center">
+            <p className="text-gray-400 text-sm">
+              © 2024 PullBar Pro. All rights reserved.
+            </p>
+            <p className="text-gray-500 text-xs mt-2 sm:mt-0">
+              Made with ❤️ for developers
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
