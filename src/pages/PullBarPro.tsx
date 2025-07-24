@@ -81,11 +81,11 @@ const PullBarPro = () => {
           </h1>
           
           <p className="text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto mb-6 sm:mb-8">
-            Premium GitHub pull request manager for macOS which delivers professional workflows and enhanced productivity. Period.
+            A beautiful macOS menubar app for managing GitHub pull requests. Free version includes 1 customizable tab, upgrade with one in-app purchase to unlock up to 5 tabs with advanced customization.
           </p>
 
           <p className="text-sm text-gray-400 mb-8 sm:mb-10">
-            Beautiful design. Advanced features. Lightning fast.
+            Highly customizable. Lightning fast. Always in your menubar.
           </p>
 
           <div className="flex justify-center items-center mb-8">
