@@ -125,24 +125,24 @@ const PullBarPro = () => {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-blue-500 rounded-xl mx-auto mb-4 flex items-center justify-center">
-                <Palette className="w-6 h-6 text-white" />
+                <BarChart className="w-6 h-6 text-white" />
               </div>
-              <h3 className="text-xl font-semibold text-white mb-3">BEAUTIFUL DESIGN</h3>
+              <h3 className="text-xl font-semibold text-white mb-3">ONE-CLICK ACCESS</h3>
               <p className="text-gray-400">
-                A completely redesigned interface that feels native to macOS. Clean, elegant, and distraction-free experience that enhances your workflow.
+                Your PRs just one click away in your menubar
               </p>
             </div>
 
             <div className="text-center">
               <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl mx-auto mb-4 flex items-center justify-center">
-                <Zap className="w-6 h-6 text-white" />
+                <Filter className="w-6 h-6 text-white" />
               </div>
-              <h3 className="text-xl font-semibold text-white mb-3">LIGHTNING FAST</h3>
+              <h3 className="text-xl font-semibold text-white mb-3">CUSTOMIZABLE</h3>
               <p className="text-gray-400">
-                Optimized performance with smart caching and instant search. Navigate through hundreds of pull requests without any lag or delay.
+                Customize what PRs you want to see by using GitHub search syntax
               </p>
             </div>
 
@@ -150,39 +150,9 @@ const PullBarPro = () => {
               <div className="w-12 h-12 bg-gradient-to-br from-cyan-500 to-green-500 rounded-xl mx-auto mb-4 flex items-center justify-center">
                 <Keyboard className="w-6 h-6 text-white" />
               </div>
-              <h3 className="text-xl font-semibold text-white mb-3">KEYBOARD-FIRST</h3>
+              <h3 className="text-xl font-semibold text-white mb-3">KEYBOARD SUPPORT</h3>
               <p className="text-gray-400">
-                Comprehensive keyboard shortcuts for every action. Navigate, review, and manage pull requests without touching your mouse.
-              </p>
-            </div>
-
-            <div className="text-center">
-              <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-yellow-500 rounded-xl mx-auto mb-4 flex items-center justify-center">
-                <Shield className="w-6 h-6 text-white" />
-              </div>
-              <h3 className="text-xl font-semibold text-white mb-3">SECURE AND PRIVATE</h3>
-              <p className="text-gray-400">
-                Your data stays on your device. OAuth tokens are securely stored in macOS Keychain. No tracking, no analytics, just privacy.
-              </p>
-            </div>
-
-            <div className="text-center">
-              <div className="w-12 h-12 bg-gradient-to-br from-yellow-500 to-orange-500 rounded-xl mx-auto mb-4 flex items-center justify-center">
-                <Users className="w-6 h-6 text-white" />
-              </div>
-              <h3 className="text-xl font-semibold text-white mb-3">TEAM FOCUSED</h3>
-              <p className="text-gray-400">
-                Multi-account support, advanced filtering, and team collaboration features. Perfect for organizations and power users.
-              </p>
-            </div>
-
-            <div className="text-center">
-              <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-500 rounded-xl mx-auto mb-4 flex items-center justify-center">
-                <Star className="w-6 h-6 text-white" />
-              </div>
-              <h3 className="text-xl font-semibold text-white mb-3">PREMIUM QUALITY</h3>
-              <p className="text-gray-400">
-                Built exclusively for the Mac App Store. Regular updates, App Store quality assurance, and seamless macOS integration.
+                Setup a shortcut to show the app, and switch between PR types by a shortcut
               </p>
             </div>
           </div>
