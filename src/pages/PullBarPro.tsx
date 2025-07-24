@@ -13,49 +13,49 @@ const PullBarPro = () => {
       id: "pr-details",
       title: "Pull Request Details",
       description: "View comprehensive PR information at a glance: author avatars, descriptive titles, repository and PR numbers, branch details, timestamps, and code change statistics (+/- lines). Each PR shows the author's profile picture, making it easy to identify contributors, along with precise branch information and time since last update.",
-      screenshot: "/lovable-uploads/eef44819-4ec1-4c5a-b3ce-78c782761e20.png",
+      screenshot: "/pullbar-app/lovable-uploads/eef44819-4ec1-4c5a-b3ce-78c782761e20.png",
       icon: FileText
     },
     {
       id: "tabs",
       title: "Tabs",
       description: "Customize up to multiple tabs with personalized names and custom GitHub search queries. Enable or disable tabs as needed, set specific search criteria like 'reviewed-by:@me' or 'author:@me', and organize your workflow with predefined query tips. Each tab can filter PRs by specific repositories, authors, review status, or any GitHub search parameter.",
-      screenshot: "/lovable-uploads/ff05b8ef-0d7d-4a66-a6c9-44f0b1748f21.png",
+      screenshot: "pullbar-app/lovable-uploads/ff05b8ef-0d7d-4a66-a6c9-44f0b1748f21.png",
       icon: Layout
     },
     {
       id: "keyboard-support",
       title: "Keyboard Support",
       description: "You can assign a keyboard shortcut to toggle the app. Additionally, while the app is open, you can switch between tabs using ⌘cmd + 1 through ⌘cmd + 3, depending on the number of enabled tabs.",
-      screenshot: "/lovable-uploads/820b73a4-adb6-43d6-95e5-96692a74c8fd.png",
+      screenshot: "/pullbar-app/lovable-uploads/820b73a4-adb6-43d6-95e5-96692a74c8fd.png",
       icon: Keyboard
     },
     {
       id: "build-checks",
       title: "Build: Checks",
       description: "Status checks is a code quality feature of GitHub's pull requests, which is based on external processes, like CI pipeline. There are two types of status checks: check and commit status. PullBar supports both of them.",
-      screenshot: "/lovable-uploads/2365da03-df5c-43e7-87fc-1e0701e26b8d.png",
+      screenshot: "/pullbar-app/lovable-uploads/2365da03-df5c-43e7-87fc-1e0701e26b8d.png",
       icon: CheckCircle
     },
     {
       id: "build-commit-status",
       title: "Build: Commit Status",
       description: "Status checks is a code quality feature of GitHub's pull requests, which is based on external processes, like CI pipeline. There are two types of status checks: check and commit status. PullBar supports both of them.",
-      screenshot: "/lovable-uploads/6520ffde-43d9-4b52-ae42-22d9903d4ead.png",
+      screenshot: "/pullbar-app/lovable-uploads/6520ffde-43d9-4b52-ae42-22d9903d4ead.png",
       icon: GitCommit
     },
     {
       id: "reviews",
       title: "Reviews",
       description: "For each pull request you can find number of approvals, comments or change requests, with the reviewer's name and a direct link to the corresponding review.",
-      screenshot: "/lovable-uploads/ec6ac55a-420a-4139-9426-280185864a57.png",
+      screenshot: "/pullbar-app/lovable-uploads/ec6ac55a-420a-4139-9426-280185864a57.png",
       icon: MessageSquare
     },
     {
       id: "pricing",
       title: "Pricing & Tabs",
       description: "PullBar Pro offers a generous free tier with 1 customizable tab to get you started. Unlock the full potential with a single in-app purchase that enables up to 5 tabs with advanced customization options, perfect for managing multiple repositories or different workflow stages.",
-      screenshot: "/lovable-uploads/ec6ac55a-420a-4139-9426-280185864a57.png", // placeholder, user will provide screenshot later
+      screenshot: "/pullbar-app/lovable-uploads/ec6ac55a-420a-4139-9426-280185864a57.png", // placeholder, user will provide screenshot later
       icon: Star
     }
   ];
@@ -77,7 +77,7 @@ const PullBarPro = () => {
         <div className="container mx-auto max-w-4xl text-center">
           <div className="mb-6 sm:mb-8 relative inline-block">
             <img 
-              src="/lovable-uploads/eca8ef3b-a8f7-47a9-9eab-13a334a70c09.png"
+              src="/pullbar-app/lovable-uploads/eca8ef3b-a8f7-47a9-9eab-13a334a70c09.png"
               alt="PullBar Pro App Icon"
               className="w-28 h-28 sm:w-32 sm:h-32 mx-auto rounded-2xl shadow-2xl"
             />
@@ -212,7 +212,7 @@ const PullBarPro = () => {
             <div className="md:col-span-1">
               <div className="flex items-center space-x-3 mb-4">
                 <img 
-                  src="/lovable-uploads/eca8ef3b-a8f7-47a9-9eab-13a334a70c09.png"
+                  src="/pullbar-app/lovable-uploads/eca8ef3b-a8f7-47a9-9eab-13a334a70c09.png"
                   alt="PullBar Pro"
                   className="w-8 h-8 rounded-lg"
                 />
