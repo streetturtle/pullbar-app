@@ -69,9 +69,11 @@ const PullBarPro = () => {
       <section className="relative py-12 sm:py-16 lg:py-20 px-4 sm:px-6">
         <div className="container mx-auto max-w-4xl text-center">
           <div className="mb-6 sm:mb-8 relative inline-block">
-            <div className="w-20 h-20 sm:w-24 sm:h-24 bg-gradient-to-br from-purple-600 to-blue-600 rounded-2xl shadow-2xl mx-auto flex items-center justify-center">
-              <BarChart className="w-10 h-10 sm:w-12 sm:h-12 text-white" />
-            </div>
+            <img 
+              src="/lovable-uploads/eca8ef3b-a8f7-47a9-9eab-13a334a70c09.png"
+              alt="PullBar Pro App Icon"
+              className="w-20 h-20 sm:w-24 sm:h-24 mx-auto rounded-2xl shadow-2xl"
+            />
           </div>
           
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-purple-400 via-blue-400 to-cyan-400 bg-clip-text text-transparent">
