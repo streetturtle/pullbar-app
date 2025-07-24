@@ -164,7 +164,7 @@ const PullBarPro = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12 sm:mb-16">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-white">
-              How?
+              Features
             </h2>
           </div>
 
