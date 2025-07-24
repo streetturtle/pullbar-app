@@ -104,7 +104,7 @@ const PullBarPro = () => {
           </div>
 
           <p className="text-xs text-gray-500">
-            Requires macOS Sonoma 14 or higher
+            Requires macOS Ventura 13 or higher
           </p>
         </div>
       </section>
