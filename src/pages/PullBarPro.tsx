@@ -20,7 +20,7 @@ const PullBarPro = () => {
       id: "tabs",
       title: "Tabs",
       description: "Customize up to multiple tabs with personalized names and custom GitHub search queries. Enable or disable tabs as needed, set specific search criteria like 'reviewed-by:@me' or 'author:@me', and organize your workflow with predefined query tips. Each tab can filter PRs by specific repositories, authors, review status, or any GitHub search parameter.",
-      screenshot: "pullbar-app/lovable-uploads/ff05b8ef-0d7d-4a66-a6c9-44f0b1748f21.png",
+      screenshot: "/pullbar-app/lovable-uploads/ff05b8ef-0d7d-4a66-a6c9-44f0b1748f21.png",
       icon: Layout
     },
     {
@@ -103,7 +103,7 @@ const PullBarPro = () => {
               className="hover:opacity-80 transition-opacity duration-300"
             >
               <img 
-                src="/download-on-mac-app-store.svg"
+                src="/pullbar-app/download-on-mac-app-store.svg"
                 alt="Download on the Mac App Store"
                 className="h-14 sm:h-16"
               />
