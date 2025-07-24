@@ -50,6 +50,13 @@ const PullBarPro = () => {
       description: "For each pull request you can find number of approvals, comments or change requests, with the reviewer's name and a direct link to the corresponding review.",
       screenshot: "/lovable-uploads/ec6ac55a-420a-4139-9426-280185864a57.png",
       icon: MessageSquare
+    },
+    {
+      id: "pricing",
+      title: "Pricing & Tabs",
+      description: "PullBar Pro offers a generous free tier with 1 customizable tab to get you started. Unlock the full potential with a single in-app purchase that enables up to 5 tabs with advanced customization options, perfect for managing multiple repositories or different workflow stages.",
+      screenshot: "/lovable-uploads/ec6ac55a-420a-4139-9426-280185864a57.png", // placeholder, user will provide screenshot later
+      icon: Star
     }
   ];
 
@@ -72,7 +79,7 @@ const PullBarPro = () => {
             <img 
               src="/lovable-uploads/eca8ef3b-a8f7-47a9-9eab-13a334a70c09.png"
               alt="PullBar Pro App Icon"
-              className="w-20 h-20 sm:w-24 sm:h-24 mx-auto rounded-2xl shadow-2xl"
+              className="w-28 h-28 sm:w-32 sm:h-32 mx-auto rounded-2xl shadow-2xl"
             />
           </div>
           
@@ -81,7 +88,7 @@ const PullBarPro = () => {
           </h1>
           
           <p className="text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto mb-6 sm:mb-8">
-            A beautiful macOS menubar app for managing GitHub pull requests. Free version includes 1 customizable tab, upgrade with one in-app purchase to unlock up to 5 tabs with advanced customization.
+            A beautiful macOS menubar app for managing GitHub pull requests.
           </p>
 
           <p className="text-sm text-gray-400 mb-8 sm:mb-10">
