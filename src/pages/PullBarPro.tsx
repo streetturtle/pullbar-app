@@ -88,14 +88,19 @@ const PullBarPro = () => {
             Beautiful design. Advanced features. Lightning fast.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-            <Button size="lg" className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-6 py-3 rounded-xl shadow-2xl hover:shadow-purple-500/25 transition-all duration-300 font-semibold">
-              <Download className="w-5 h-5 mr-2" />
-              Get in App Store
-            </Button>
-            <Button variant="outline" size="lg" className="border-white/20 text-white hover:bg-white/10 px-6 py-3 rounded-xl">
-              Download now
-            </Button>
+          <div className="flex justify-center items-center mb-8">
+            <a 
+              href="https://apps.apple.com/us/app/pullbarpro/id6462591649?mt=12&itsct=apps_box_badge&itscg=30200"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:opacity-80 transition-opacity duration-300"
+            >
+              <img 
+                src="/download-on-mac-app-store.svg"
+                alt="Download on the Mac App Store"
+                className="h-14 sm:h-16"
+              />
+            </a>
           </div>
 
           <p className="text-xs text-gray-500">
