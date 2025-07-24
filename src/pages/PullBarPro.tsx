@@ -233,34 +233,6 @@ const PullBarPro = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="relative py-16 sm:py-20 lg:py-24 px-4 sm:px-6">
-        <div className="container mx-auto max-w-4xl">
-          <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-pink-600/20 rounded-2xl blur-xl"></div>
-            <Card className="relative bg-gradient-to-r from-purple-900/60 to-pink-900/60 border-purple-700/50 shadow-2xl shadow-purple-500/20 backdrop-blur-sm">
-              <CardContent className="p-12 text-center">
-                <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-purple-300 to-pink-300 bg-clip-text text-transparent mb-6">
-                  Ready for the Pro Experience?
-                </h2>
-                <p className="text-xl lg:text-2xl text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed">
-                  Transform how you manage GitHub pull requests. Perfect for teams and power users who demand more from their workflow tools.
-                </p>
-                <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-                  <Button 
-                    size="lg"
-                    className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-8 py-3 rounded-xl shadow-2xl hover:shadow-purple-500/25 transition-all duration-300 font-semibold"
-                    onClick={() => window.open('https://apps.apple.com/us/app/pullbarpro/id6462591649?mt=12&itsct=apps_box_badge&itscg=30200', '_blank')}
-                  >
-                    <Download className="w-5 h-5 mr-2" />
-                    Get PullBar Pro
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
 
       {/* Footer */}
       <footer className="border-t border-gray-800 bg-gray-900/50">
