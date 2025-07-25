@@ -103,7 +103,7 @@ const PullBarPro = () => {
               className="hover:opacity-80 transition-opacity duration-300"
             >
               <img 
-                src="/pullbar-app/download-on-mac-app-store.svg"
+                src="/uploads/download-on-mac-app-store.svg"
                 alt="Download on the Mac App Store"
                 className="h-14 sm:h-16"
               />
