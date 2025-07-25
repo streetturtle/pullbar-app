@@ -79,7 +79,7 @@ const PullBarPro = () => {
             <img 
               src="/uploads/eca8ef3b-a8f7-47a9-9eab-13a334a70c09.png"
               alt="PullBar Pro App Icon"
-              className="w-28 h-28 sm:w-32 sm:h-32 mx-auto rounded-2xl shadow-2xl"
+              className="w-28 h-28 sm:w-32 sm:h-32 mx-auto"
             />
           </div>
           
@@ -233,22 +233,25 @@ const PullBarPro = () => {
               </ul>
             </div>
 
-            {/* Support */}
-            <div>
-              <h3 className="text-white font-semibold mb-3">Support</h3>
-              <ul className="space-y-2 text-sm">
-                <li><a href="#how-it-works" className="text-gray-400 hover:text-white transition-colors">How It Works</a></li>
-                <li><a href="#system-requirements" className="text-gray-400 hover:text-white transition-colors">Requirements</a></li>
-              </ul>
-            </div>
-
             {/* Legal */}
             <div>
               <h3 className="text-white font-semibold mb-3">Legal</h3>
               <ul className="space-y-2 text-sm">
-                <li><a href="/privacy" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
+                <li><a href="/privacy-policy" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
               </ul>
             </div>
+
+            {/* Support */}
+            <div>
+              <h3 className="text-white font-semibold mb-3">More Apps</h3>
+              <ul className="space-y-2 text-sm">
+                <li><a href="https://menubar-apps.github.io/#gojibar" className="text-gray-400 hover:text-white transition-colors"><img src="/uploads/gojibar.png" alt="GojiBar" className="w-6 h-6 rounded-lg inline mr-2" />GojiBar</a></li>
+                <li><a href="https://menubar-apps.github.io/#mergebar" className="text-gray-400 hover:text-white transition-colors"><img src="/uploads/mergebar.png" alt="MergeBar" className="w-6 h-6 rounded-lg inline mr-2" />MergeBar</a></li>
+                <li><a href="https://menubar-apps.github.io/#swiftystats" className="text-gray-400 hover:text-white transition-colors"><img src="/uploads/swiftystats.png" alt="SwiftyStats" className="w-6 h-6 rounded-lg inline mr-2" />SwiftyStats</a></li>
+
+              </ul>
+            </div>
+
           </div>
 
           <div className="border-t border-gray-800 mt-8 pt-6 flex flex-col sm:flex-row justify-between items-center">
