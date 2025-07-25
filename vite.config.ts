@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
   // Set base URL dynamically - use '/pullbar-app/' for production (GitHub Pages), '/' for development
-  base: mode === 'production' ? '/pullbar-app/' : '/',
+  base: '/',
   server: {
     host: "::",
     port: 8080,
