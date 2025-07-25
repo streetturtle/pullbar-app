@@ -12,21 +12,34 @@ const PullBarPro = () => {
     {
       id: "pr-details",
       title: "Pull Request Details",
-      description: "View comprehensive PR information at a glance: author avatars, descriptive titles, repository and PR numbers, branch details, timestamps, and code change statistics (+/- lines). Each PR shows the author's profile picture, making it easy to identify contributors, along with precise branch information and time since last update.",
+      description: "View comprehensive PR information at a glance: author, title, repo, PR number, branch, code change statistics (+/- lines). Each PR shows the author's profile picture, making it easy to identify contributors.",
       screenshot: "/uploads/eef44819-4ec1-4c5a-b3ce-78c782761e20.png",
       icon: FileText
     },
     {
       id: "tabs",
       title: "Tabs",
-      description: "Customize up to multiple tabs with personalized names and custom GitHub search queries. Enable or disable tabs as needed, set specific search criteria like 'reviewed-by:@me' or 'author:@me', and organize your workflow with predefined query tips. Each tab can filter PRs by specific repositories, authors, review status, or any GitHub search parameter.",
+      description: (
+        <>
+          Customize up to 5 tabs with personalized names and custom GitHub search queries. Enable or disable tabs as needed, set specific search criteria based on{' '}
+          <a
+            href="https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/filtering-and-searching-issues-and-pull-requests"
+            className="text-blue-400 underline hover:text-blue-200"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub search syntax
+          </a>
+          .
+        </>
+      ),
       screenshot: "/uploads/ff05b8ef-0d7d-4a66-a6c9-44f0b1748f21.png",
       icon: Layout
     },
     {
       id: "keyboard-support",
       title: "Keyboard Support",
-      description: "You can assign a keyboard shortcut to toggle the app. Additionally, while the app is open, you can switch between tabs using ⌘cmd + 1 through ⌘cmd + 3, depending on the number of enabled tabs.",
+      description: "You can assign a keyboard shortcut to toggle the app. Additionally, while the app is open, you can switch between tabs using ⌘cmd + 1 through ⌘cmd + 5, depending on the number of enabled tabs.",
       screenshot: "/uploads/820b73a4-adb6-43d6-95e5-96692a74c8fd.png",
       icon: Keyboard
     },
@@ -54,8 +67,8 @@ const PullBarPro = () => {
     {
       id: "pricing",
       title: "Pricing & Tabs",
-      description: "PullBar Pro offers a generous free tier with 1 customizable tab to get you started. Unlock the full potential with a single in-app purchase that enables up to 5 tabs with advanced customization options, perfect for managing multiple repositories or different workflow stages.",
-      screenshot: "/uploads/ec6ac55a-420a-4139-9426-280185864a57.png", // placeholder, user will provide screenshot later
+      description: "PullBar Pro offers a free tier with 1 customizable tab to get you started. Unlock the full potential with a single in-app purchase that enables up to 5 tabs with advanced customization options, perfect for managing multiple repositories or different workflow stages.",
+      screenshot: "/uploads/pricing.png", // placeholder, user will provide screenshot later
       icon: Star
     }
   ];
@@ -76,6 +89,7 @@ const PullBarPro = () => {
       <section className="relative py-12 sm:py-16 lg:py-20 px-4 sm:px-6">
         <div className="container mx-auto max-w-4xl text-center">
           <div className="mb-6 sm:mb-8 relative inline-block">
+
             <img 
               src="/uploads/eca8ef3b-a8f7-47a9-9eab-13a334a70c09.png"
               alt="PullBar Pro App Icon"
@@ -160,11 +174,11 @@ const PullBarPro = () => {
       </section>
 
       {/* How Section */}
-      <section className="relative py-16 sm:py-20 lg:py-24 px-4 sm:px-6">
+      <section id="features" className="relative py-16 sm:py-20 lg:py-24 px-4 sm:px-6">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12 sm:mb-16">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-white">
-              How?
+              Features
             </h2>
           </div>
 
@@ -203,6 +217,39 @@ const PullBarPro = () => {
         </div>
       </section>
 
+{/* Pricing Section */}
+    <section id="pricing" className="relative py-16 sm:py-20 lg:py-24 px-4 sm:px-6">
+      <div className="container mx-auto max-w-6xl">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-white">
+            Pricing
+          </h2>
+        </div>
+        <div className="flex flex-col sm:flex-row justify-center gap-8">
+          {/* Free Tier */}
+          <div className="flex-1 bg-gray-900/80 rounded-xl p-6 shadow-lg border border-gray-800 text-center">
+            <h3 className="text-2xl font-semibold mb-2 text-purple-300">Free</h3>
+            <div className="text-4xl font-bold mb-4 text-white">$0</div>
+            <ul className="mb-6 space-y-2 text-gray-300 text-base">
+              <li>🛵 1 customizable tab</li>
+            </ul>
+            <img src="/uploads/1tab.png" alt="1 tab" className="w-full rounded-2xl shadow-2xl border border-white/10" />
+            <div className="text-xs text-gray-500 mt-4">Perfect for getting started</div>
+          </div>
+          {/* Pro Tier */}
+          <div className="flex-1 bg-gradient-to-br from-purple-900/80 via-blue-900/80 to-black rounded-xl p-6 shadow-2xl border border-purple-700 text-center relative">
+            <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-yellow-400 text-black px-3 py-1 rounded-full text-xs font-bold shadow-md">One-Time Purchase</div>
+            <h3 className="text-2xl font-semibold mb-2 text-yellow-300">Pro</h3>
+            <div className="text-4xl font-bold mb-4 text-white">$2</div>
+            <ul className="mb-6 space-y-2 text-gray-100 text-base">
+              <li>🏎️ Up to 5 customizable tabs</li>
+              </ul>
+              <img src="/uploads/5tabs.png" alt="5 tabs" className="w-full rounded-2xl shadow-2xl border border-white/10" />
+              <div className="text-xs text-gray-300 mt-4">Unlock advanced workflow for a one-time payment</div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Footer */}
       <footer className="border-t border-gray-800 bg-gray-900/50">
@@ -227,9 +274,9 @@ const PullBarPro = () => {
             <div>
               <h3 className="text-white font-semibold mb-3">Product</h3>
               <ul className="space-y-2 text-sm">
-                <li><a href="#features" className="text-gray-400 hover:text-white transition-colors">Features</a></li>
-                <li><a href="#pricing" className="text-gray-400 hover:text-white transition-colors">Pricing</a></li>
-                <li><a href="#download" className="text-gray-400 hover:text-white transition-colors">Download</a></li>
+                <li><a href="#features" className="text-gray-400 hover:text-white transition-colors" onClick={e => {e.preventDefault(); document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' });}}>Features</a></li>
+                <li><a href="#pricing" className="text-gray-400 hover:text-white transition-colors" onClick={e => {e.preventDefault(); document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' });}}>Pricing</a></li>
+                <li><a href="https://apps.apple.com/us/app/pullbarpro/id6462591649" className="text-gray-400 hover:text-white transition-colors">Download</a></li>
               </ul>
             </div>
 
